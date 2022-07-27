@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Template</title>
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">Password generator</h1>
+        <div class="res">
+            <input type="text" disabled class="pass">
+        </div>
+        <div class="props">
+            <div сlass="range">
+                <span class="pass__desc">Password length: </span>
+                <button class="btn plus">+</button>
+                <input type="range" class="range__inp" min = "0" max = "16" step="1"> 
+                <button class="btn minus">−</button>
+            </div>
+            <form class="check">
+                <span class="check__desc">Characters used:</span>
+                <label for="" class="prop__desc">1234</label>
+                <input type="checkbox" class="prop" id="num">
+                <label for="" class="prop__desc">AbC</label>
+                <input type="checkbox" class="prop" id="reg">
+                <label for="" class="prop__desc">@_-</label>
+                <input type="checkbox" class="prop" id="spec">
+            </form>
+        </div>
+        <button class="get_clip">Скопировать</button>
+        <div class="popup">
+            <span class="popuptext" id="myPopup">Скопирован текст</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

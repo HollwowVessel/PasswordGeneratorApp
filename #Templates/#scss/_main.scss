@@ -1,0 +1,172 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    transition: 2s;
+    
+}
+.btn{
+    border: none;
+    border-radius: 100%;
+    font-size: 24px;
+    background: #fff;
+    padding: 5px 13px;
+    transition: 2s;
+    cursor: pointer;
+    &:hover, &:active, &:focus{
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    
+}
+.range__inp{
+    cursor: pointer;
+}
+.title{
+    font-size: 30px;
+}
+
+.plus{
+    margin-left: 20px;
+    color: #59e4ec;
+}
+
+.minus{
+    color: #ff5151;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 1em;
+    padding: 2em;
+    min-width: 420px;
+    background: #222;
+    font-size: 18px;
+}
+
+.res {
+    margin-top: 20px;
+}
+.props {
+    margin-top: 40px;
+}
+
+.prop__desc{
+    margin-left: 10px;
+}
+
+.prop{
+    transition: 2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+        transform: scale(2);
+    }
+}
+
+.pass{
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    margin-left: 40px;
+    color: #fff;
+    padding: 7px 20px;
+}
+
+
+.pass__desc{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.check__desc{
+    font-size: 20px;
+}
+
+.range {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 40px;
+}
+.check {
+    margin-top: 20px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-left: 40px;
+}
+
+.get_clip{
+    margin-top: 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 5px 16px;
+    border: none;
+    outline: none;
+    transition: 2s;
+    cursor: pointer;
+    &:hover, &:active, &:focus{
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+  }
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
